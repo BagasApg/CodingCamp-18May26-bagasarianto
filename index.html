@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="card header__card">
+      <div class="header__greeting" id="greeting"></div>
+      <form class="name-form" id="nameForm" onsubmit="saveName(event)" style="display:none">
+        <input class="name-input" id="nameInput" type="text" maxlength="30" />
+      </form>
+      <div class="header__date" id="date"></div>
+      <div class="header__timer" id="timer"></div>
+      <div class="header__quote" id="quote"></div>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">too bright? ☀️</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="card-grid">
+
+      <div class="card card--center">
+        <h2 class="card__title">Focus Timer</h2>
+        <div class="focus-timer" id="focusDisplay">25:00</div>
+        <div class="focus-controls">
+          <button class="btn-start" onclick="startTimer()">Start</button>
+          <button onclick="stopTimer()">Stop</button>
+          <button onclick="resetTimer()">Reset</button>
+        </div>
+      </div>
+
+      <div class="card card--span">
+        <h2 class="card__title">Tasks</h2>
+        <form class="todo-form" onsubmit="addTask(event)">
+          <input class="todo-input" type="text" placeholder="New task..." required />
+          <button type="submit">Add</button>
+        </form>
+        <span class="todo-warning" id="todoWarning"></span>
+        <ul class="todo-list" id="todoList"></ul>
+      </div>
+
+      <div class="card">
+        <h2 class="card__title">Quick Links</h2>
+        <form class="link-form" onsubmit="addLink(event)">
+          <input class="link-input" type="text" id="linkName" placeholder="Name" required />
+          <input class="link-input" type="url" id="linkUrl" placeholder="https://..." required />
+          <button type="submit">Add</button>
+        </form>
+        <ul class="link-list" id="linkList"></ul>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

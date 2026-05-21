@@ -1,0 +1,35 @@
+{
+  "session_id": "a667b751-84cd-48c6-a0e9-218eeed174df",
+  "cwd": "C:\\Users\\bagasap",
+  "created_at": "2026-05-21T16:14:35.916352800Z",
+  "updated_at": "2026-05-21T16:14:43.047310800Z",
+  "title": "I want to add randomzied quotes in the header card from popular figures about routine, productivity, and dedication. Add at least 6 quotes. Put it ...",
+  "session_created_reason": "subagent",
+  "session_state": {
+    "version": "v1",
+    "conversation_metadata": {
+      "user_turn_metadatas": [],
+      "user_turn_start_request": null,
+      "last_request": null
+    },
+    "rts_model_state": {
+      "conversation_id": "a667b751-84cd-48c6-a0e9-218eeed174df",
+      "model_info": null,
+      "context_usage_percentage": null
+    },
+    "permissions": {
+      "filesystem": {
+        "allowed_read_paths": [
+          "C:\\Users\\bagasap"
+        ],
+        "allowed_write_paths": [],
+        "denied_read_paths": [],
+        "denied_write_paths": []
+      },
+      "trusted_tools": [],
+      "denied_tools": [],
+      "allowed_commands": []
+    },
+    "agent_name": null
+  }
+}
